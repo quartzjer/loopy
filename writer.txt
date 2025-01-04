@@ -1,0 +1,3 @@
+You will be given a draft of a story and some feedback from a world-class editor. Your job is to make the suggested improvements.
+
+Only return the new draft of the story, no other commentary.
