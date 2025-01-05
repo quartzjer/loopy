@@ -38,6 +38,11 @@ With one-time manual feedback (first run only):
 Or read feedback from stdin:
 `echo "Add more conflict" | python loop.py input_file.txt --feedback -`
 
+With initial content (convenient bootstrap to create new_story.txt in one go):
+`python loop.py new_story.txt --bootstrap "Once upon a time..."`
+Or read initial content from stdin:
+`cat seed_story.txt | python loop.py new_story.txt --bootstrap -`
+
 ## Parameters
 
 - `input_file`: Path to the text file to process (updates in place)
@@ -45,6 +50,7 @@ Or read feedback from stdin:
 - `--sleep`: Seconds to wait between loops (default: 10)
 - `--git`: Enable Git integration to track changes in branches
 - `--feedback`: Provide one-time manual editor feedback or use '-' to read from stdin
+- `--bootstrap`: Initial content for input file or use '-' to read from stdin
 
 ## Example Stories
 

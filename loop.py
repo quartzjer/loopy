@@ -97,6 +97,7 @@ def main():
     parser.add_argument('--sleep', type=int, default=10, help='Seconds to sleep between loops')
     parser.add_argument('--git', action='store_true', help='Enable git integration')
     parser.add_argument('--feedback', help='Manual feedback override (use - for stdin)')
+    parser.add_argument('--bootstrap', help='Initial file contents (use - for stdin)')
     args = parser.parse_args()
 
     global logger
@@ -117,6 +118,7 @@ def main():
     try:
         editor_model, writer_model = setup_models()
         manual_feedback = None
+        bootstrap_content = None
         
         if args.feedback:
             if args.feedback == '-':
@@ -124,6 +126,15 @@ def main():
             else:
                 manual_feedback = args.feedback
             logger.info("Using manual feedback override")
+
+        if args.bootstrap:
+            if args.bootstrap == '-':
+                bootstrap_content = sys.stdin.read().strip()
+            else:
+                bootstrap_content = args.bootstrap
+            logger.info("Using bootstrap content")
+            with open(args.input_file, 'w') as f:
+                f.write(bootstrap_content)
         
         for i in range(args.loops):
             start_time = time.time()
