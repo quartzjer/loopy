@@ -1,3 +1,4 @@
 argparse
 python-dotenv
 google-generativeai
+gitpython
