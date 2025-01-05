@@ -25,23 +25,23 @@ It's designed to run at a rate under the (currently) free tier of 15 requsts per
 ## Usage
 
 Basic usage:
-`python loop.py your_story.txt`
+`python loop.py your_story.md`
 
 With custom parameters:
-`python loop.py input_file.txt --loops 3 --sleep 15`
+`python loop.py input_file.md --loops 3 --sleep 15`
 
 With Git integration:
-`python loop.py input_file.txt --git`
+`python loop.py input_file.md --git`
 
 With one-time manual feedback (first run only):
-`python loop.py input_file.txt --feedback "Make the dialogue more natural"`
+`python loop.py input_file.md --feedback "Make the dialogue more natural"`
 Or read feedback from stdin:
-`echo "Add more conflict" | python loop.py input_file.txt --feedback -`
+`echo "Add more conflict" | python loop.py input_file.md --feedback -`
 
-With initial content (convenient bootstrap to create new_story.txt in one go):
-`python loop.py new_story.txt --bootstrap "Once upon a time..."`
+With initial content (convenient bootstrap to create new_story.md in one go):
+`python loop.py new_story.md --bootstrap "Once upon a time..."`
 Or read initial content from stdin:
-`cat seed_story.txt | python loop.py new_story.txt --bootstrap -`
+`cat seed_story.md | python loop.py new_story.md --bootstrap -`
 
 ## Parameters
 
@@ -56,15 +56,15 @@ Or read initial content from stdin:
 
 Here are some stories created while testing Loopy:
 
-- [Last Measurement](stories/last_measurement.txt)
-- [Quantum Mycelia](stories/quantum_mycelia.txt)
-- [The Shift](stories/the_shift.txt)
-- [Quantum Tapestry](stories/quantum_tapestry.txt)
+- [Last Measurement](stories/last_measurement.md)
+- [Quantum Mycelia](stories/quantum_mycelia.md)
+- [The Shift](stories/the_shift.md)
+- [Quantum Tapestry](stories/quantum_tapestry.md)
 
 These using the new git tracking for each revision:
 
-- [The Uncertainty Barrier](stories/uncertainty_barrier.txt)
-- [Perfect Mirror](stories/perfect_mirror.txt)
+- [The Uncertainty Barrier](stories/uncertainty_barrier.md)
+- [Perfect Mirror](stories/perfect_mirror.md)
 
 ## How It Works
 
