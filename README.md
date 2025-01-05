@@ -30,11 +30,21 @@ Basic usage:
 With custom parameters:
 `python loop.py input_file.txt --loops 3 --sleep 15`
 
+With Git integration:
+`python loop.py input_file.txt --git`
+
+With one-time manual feedback (first run only):
+`python loop.py input_file.txt --feedback "Make the dialogue more natural"`
+Or read feedback from stdin:
+`echo "Add more conflict" | python loop.py input_file.txt --feedback -`
+
 ## Parameters
 
 - `input_file`: Path to the text file to process (updates in place)
 - `--loops`: Number of refinement iterations (default: 5)
 - `--sleep`: Seconds to wait between loops (default: 10)
+- `--git`: Enable Git integration to track changes in branches
+- `--feedback`: Provide one-time manual editor feedback or use '-' to read from stdin
 
 ## Example Stories
 
@@ -44,6 +54,7 @@ Here are some stories created while testing Loopy:
 - [Quantum Mycelia](stories/quantum_mycelia_25.txt)
 - [The Shift](stories/the_shift_25.txt)
 - [Quantum Tapestry](stories/quantum_tapestry_50.txt)
+- [The Uncertainty Barrier](stories/uncertainty_barrier.txt)
 
 ## How It Works
 
@@ -51,6 +62,14 @@ Here are some stories created while testing Loopy:
 2. The writer model receives both the original text and editor feedback
 3. The writer generates an improved version
 4. This process repeats for the specified number of loops
+
+## Git Integration
+
+When using the `--git` flag, Loopy will:
+1. Create a new branch named after your input file
+2. Commit changes after each refinement loop
+3. Use editor feedback as commit messages
+4. Leave you ready to push or create a PR when done
 
 ## Contributing
 
