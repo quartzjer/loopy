@@ -1,3 +1,7 @@
+# Blinking Cursor
+
+> Original input story from [Chad Kovac](https://chadkovac.blogspot.com/2024/12/the-perfect-prompt-sarah.html)
+
 A faint hum, almost imperceptible, vibrated through the desk, up into Sarah's bones. The screen's dark mode reflected in her glasses, distorting her eyes into pools of shadow. *Why does everything feel so wrong?* she wondered, her fingers clenching on the edge of the desk, the worn wood rough beneath her nails. The deadline for her thesis loomed, a dark cloud, but her focus kept scattering like dust. A melody, distant and haunting, drifted from her computer speakers, an old love, a half-forgotten dream, surfacing. The cursor pulsed, a persistent flicker in the corner of her eye, and a spark began to glow within her, mirroring the light. A strange energy settled in her stomach, a mix of unease and anticipation, like a tight knot. *Just one more iteration*, she thought, her lips forming a small, uneasy smile. Her fingers hovered above the keys, the cool plastic feeling alien beneath her skin. *Let's write about the feeling of being watched*, she thought, the words echoing back, distorted, like a half-remembered dream, as if someone was always reading over her shoulder. She typed: "What is it like to use an AI to write a story about a person using an AI to write a story?"
 
 The AI responded: "Commencing narrative generation, as requested."
