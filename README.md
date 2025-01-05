@@ -56,11 +56,15 @@ Or read initial content from stdin:
 
 Here are some stories created while testing Loopy:
 
-- [Last Measurement](stories/last_measurement_25.txt)
-- [Quantum Mycelia](stories/quantum_mycelia_25.txt)
-- [The Shift](stories/the_shift_25.txt)
-- [Quantum Tapestry](stories/quantum_tapestry_50.txt)
+- [Last Measurement](stories/last_measurement.txt)
+- [Quantum Mycelia](stories/quantum_mycelia.txt)
+- [The Shift](stories/the_shift.txt)
+- [Quantum Tapestry](stories/quantum_tapestry.txt)
+
+These using the new git tracking for each revision:
+
 - [The Uncertainty Barrier](stories/uncertainty_barrier.txt)
+- [Perfect Mirror](stories/perfect_mirror.txt)
 
 ## How It Works
 
@@ -76,6 +80,10 @@ When using the `--git` flag, Loopy will:
 2. Commit changes after each refinement loop
 3. Use editor feedback as commit messages
 4. Leave you ready to push or create a PR when done
+
+## TODO
+
+I'd like to have an outer loop that loads all the existing stories into gemini and asks it to develop a novel new story unlike any existing ones but based on given themes. Then the inner loop will write/refine it and create a PR, then kick back out to the outer loop.
 
 ## Contributing
 
